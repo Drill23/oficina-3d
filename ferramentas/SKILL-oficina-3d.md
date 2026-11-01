@@ -12,6 +12,7 @@ Fale com o Adriano em português do Brasil, sem jargão. Todos os textos do obje
 ## A galeria
 
 - Artifact da galeria: https://claude.ai/artifact/JdEYCWC7KVZVLrLAPj4d5u
+- Repositório no GitHub: https://github.com/Drill23/oficina-3d (site pelo GitHub Pages: https://drill23.github.io/oficina-3d/). O Artifact e o repositório têm sempre os mesmos objetos.
 - Arquivos publicados nele: `index.html` (o painel), `catalog.json` (o banco de dados), `objetos/<slug>.html` (cada objeto), `thumbs/<slug>.jpg` (miniatura 16:9).
 - A galeria abre um objeto por `#of-007` no fim do link: dá para mandar o link direto de um objeto.
 - Nunca apague objetos nem mude números de ficha. Ficha nova = próximo número (OF-001, OF-002…).
@@ -152,11 +153,15 @@ Você não vê o objeto rodando, só capturas. Antes de publicar:
 4. Publique no mesmo artifact, só com os arquivos novos ou alterados (os outros ficam):
    `Artifact` → `url: https://claude.ai/artifact/JdEYCWC7KVZVLrLAPj4d5u`, `file_path: $OUT/index.html`, `root: $OUT`, `files: {"catalog.json": "catalog.json", "objetos/<slug>.html": "objetos/<slug>.html", "thumbs/<slug>.jpg": "thumbs/<slug>.jpg"}`, `label: "OF-004 Turbina Pelton"`.
    Se a publicação voltar com conflito, junte a sua ficha à versão que ele devolver e publique de novo.
-5. Mostre o objeto na conversa: o card do artifact já aparece; diga em uma frase o que foi criado, o veredito de viabilidade (se for invenção) e que o link direto é a galeria com `#of-004` no fim.
+5. Espelhe no GitHub (repositório `Drill23/oficina-3d`, a casa oficial da galeria; o site fica em https://drill23.github.io/oficina-3d/ depois que o Pages estiver ligado):
+   - Conecte o repositório com `add_repo` (owner `Drill23`, repo `oficina-3d`, access `push`) e clone em `/home/claude/oficina-3d-repo`.
+   - Copie para o clone `catalog.json`, `objetos/<slug>.html` e `thumbs/<slug>.jpg`. O `index.html` do repositório é o mesmo da galeria com estas linhas no topo (o Artifact as acrescenta sozinho, o GitHub não): `<!doctype html>`, `<html lang="pt-BR">`, `<meta charset="utf-8">`, `<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">`, `<style>body{margin:0}</style>`. Só mexa nele se o painel mudou.
+   - Commit com a mensagem `OF-004 Turbina Pelton` e push na `main`. Só o projeto Oficina 3D vai nesse repositório.
+6. Mostre o objeto na conversa: o card do artifact já aparece; diga em uma frase o que foi criado, o veredito de viabilidade (se for invenção) e que o link direto é a galeria com `#of-004` no fim (vale para o link do Claude e para o do GitHub).
 
 ## 7. Pedidos de mudança
 
-"Muda a cor", "põe mais peças", "faz a asa maior": edite a pasta do objeto em `/root/teardown/sims/<slug>-*` (se a sessão for nova e a pasta não existir, reconstrua a partir do pedido e da ficha), revise de novo e republique só `objetos/<slug>.html`, a miniatura e o `catalog.json` com a mesma ficha (mesmo id) atualizada.
+"Muda a cor", "põe mais peças", "faz a asa maior": edite a pasta do objeto em `/root/teardown/sims/<slug>-*` (se a sessão for nova e a pasta não existir, reconstrua a partir do pedido e da ficha), revise de novo e republique só `objetos/<slug>.html`, a miniatura e o `catalog.json` com a mesma ficha (mesmo id) atualizada, no Artifact e no GitHub.
 
 ## Vídeo (só se ele pedir)
 
