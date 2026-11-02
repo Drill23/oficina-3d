@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado": "2026-11-01",
+  "atualizado": "2026-11-02",
   "objetos": [
     {
       "id": "OF-001",
@@ -12,12 +12,27 @@
       "resumo": "Um V8 de quatro tempos com cilindros de vidro: a mistura queima dentro do cilindro que você acompanha, as válvulas abrem pelos cames e os 8 pistões seguem a biela-manivela exata.",
       "como_funciona": "Tudo é movido por um único número, o ângulo do virabrequim. A partir dele saem a posição de cada pistão, a abertura das válvulas, a pressão na câmara e os gráficos. Dá para trocar o corte (vidro, seção, sólido), escolher o cilindro pela ordem de ignição e girar a câmera por dentro.",
       "dados": [
-        ["Arquitetura", "V8 a 90°, virabrequim cross-plane"],
-        ["Ordem de ignição", "1-8-4-3-6-5-7-2"],
-        ["Cilindrada", "5,8 L"],
-        ["Entrada única", "Ângulo do virabrequim"]
+        [
+          "Arquitetura",
+          "V8 a 90°, virabrequim cross-plane"
+        ],
+        [
+          "Ordem de ignição",
+          "1-8-4-3-6-5-7-2"
+        ],
+        [
+          "Cilindrada",
+          "5,8 L"
+        ],
+        [
+          "Entrada única",
+          "Ângulo do virabrequim"
+        ]
       ],
-      "viabilidade": {"nivel": "real", "nota": "Máquina que existe e roda em milhões de carros. Modelo feito com medidas e ciclo reais."},
+      "viabilidade": {
+        "nivel": "real",
+        "nota": "Máquina que existe e roda em milhões de carros. Modelo feito com medidas e ciclo reais."
+      },
       "arquivo": "objetos/v8-live.html",
       "miniatura": "thumbs/v8-live.jpg"
     },
@@ -31,12 +46,27 @@
       "resumo": "O trem de pouso principal do Cessna 337 se dobrando para dentro da fuselagem na decolagem e descendo no pouso, com a pista correndo por baixo do avião.",
       "como_funciona": "Um único curso de 0 a 1 posiciona o mecanismo inteiro: uma cremalheira de 201 mm gira um pinhão de 32 dentes exatamente 180°. As fases do voo são funções do tempo, então decolagem, recolhimento e pouso nunca saem de sincronia.",
       "dados": [
-        ["Cremalheira", "201 mm de curso"],
-        ["Pinhão", "32 dentes, módulo 4 mm"],
-        ["Giro do pinhão", "180°"],
-        ["Conferência", "32 × 4 mm = 128 mm de diâmetro primitivo; metade da volta = 201 mm"]
+        [
+          "Cremalheira",
+          "201 mm de curso"
+        ],
+        [
+          "Pinhão",
+          "32 dentes, módulo 4 mm"
+        ],
+        [
+          "Giro do pinhão",
+          "180°"
+        ],
+        [
+          "Conferência",
+          "32 × 4 mm = 128 mm de diâmetro primitivo; metade da volta = 201 mm"
+        ]
       ],
-      "viabilidade": {"nivel": "real", "nota": "Mecanismo de avião real, reconstruído com as medidas de engrenagem que fecham na conta."},
+      "viabilidade": {
+        "nivel": "real",
+        "nota": "Mecanismo de avião real, reconstruído com as medidas de engrenagem que fecham na conta."
+      },
       "arquivo": "objetos/cessna-live.html",
       "miniatura": "thumbs/cessna-live.jpg"
     },
@@ -50,14 +80,79 @@
       "resumo": "A criatura de praia de Theo Jansen: 20 pernas num só virabrequim, andando de lado sobre a areia empurrada pelo vento.",
       "como_funciona": "O vento define a velocidade do virabrequim, e cada articulação das pernas é calculada por interseção de círculos a partir dos 11 comprimentos de barra do Jansen. Os rastros dos pés e o gráfico de contato mostram quais pernas estão no chão a cada instante.",
       "dados": [
-        ["Pernas", "20, num único virabrequim"],
-        ["Ligação", "11 barras (números de Jansen)"],
-        ["Entrada única", "Velocidade do vento"],
-        ["Solver", "Interseção de círculos, exata"]
+        [
+          "Pernas",
+          "20, num único virabrequim"
+        ],
+        [
+          "Ligação",
+          "11 barras (números de Jansen)"
+        ],
+        [
+          "Entrada única",
+          "Velocidade do vento"
+        ],
+        [
+          "Solver",
+          "Interseção de círculos, exata"
+        ]
       ],
-      "viabilidade": {"nivel": "real", "nota": "Escultura cinética que existe e anda de verdade nas praias da Holanda."},
+      "viabilidade": {
+        "nivel": "real",
+        "nota": "Escultura cinética que existe e anda de verdade nas praias da Holanda."
+      },
       "arquivo": "objetos/strandbeest-live.html",
       "miniatura": "thumbs/strandbeest-live.jpg"
+    },
+    {
+      "id": "OF-004",
+      "slug": "cronolito",
+      "nome": "Cronolito — relicário que para o tempo",
+      "categoria": "invencao",
+      "criado": "2026-11-02",
+      "pedido": "Cria pra mim esse objeto da foto em 3D, com essa aparência e que eu possa ver em detalhes; ele vai ter o poder de parar o tempo e petrificar as coisas. (Criado como peça original no mesmo espírito, sem copiar o desenho da foto.)",
+      "resumo": "Uma relíquia de 18 cm com núcleo de cristal, três anéis de cardã e um escapamento de relógio. Quando os anéis travam, o tempo para e uma onda transforma em pedra a flor, a borboleta, a ampulheta e as gotas ao redor.",
+      "como_funciona": "Tudo sai de um único número, a ativação num ciclo de 16 s: os anéis aceleram e o cristal carrega; os três anéis se alinham num plano só (a trava de cardã) e o tempo cai para 0,1%; a onda de estase se espalha até 68 cm e cada coisa que ela toca para o próprio relógio e vira pedra; no retorno a onda recua e a pedra volta a ser o que era. Dá para isolar o núcleo, os anéis, o escapamento e a gaiola, explodir as peças e arrastar a ativação para qualquer instante.",
+      "dados": [
+        [
+          "Diâmetro da gaiola",
+          "18 cm (120 hastes)"
+        ],
+        [
+          "Massa da peça",
+          "1,4 kg"
+        ],
+        [
+          "Anéis do cardã",
+          "3: Ø 15,6 · 12,8 · 10 cm"
+        ],
+        [
+          "Escapamento",
+          "rodas de 15, 40 e 24 dentes, módulo 1,2 mm, 2 tiques/s"
+        ],
+        [
+          "Alcance da onda",
+          "68 cm"
+        ],
+        [
+          "Tempo dentro do campo",
+          "0,1% do normal"
+        ],
+        [
+          "Massa para frear assim",
+          "≈ 6 × 10²⁵ kg (≈ 10 Terras)"
+        ],
+        [
+          "Entrada única",
+          "Ativação (ciclo de 16 s)"
+        ]
+      ],
+      "viabilidade": {
+        "nivel": "inviavel",
+        "nota": "Pela relatividade, frear o tempo a 0,1% a 9 cm do centro exige ≈ 10 Terras de massa espremidas nesse raio — um buraco negro. E fossilizar de verdade leva uns 10 mil anos."
+      },
+      "arquivo": "objetos/cronolito.html",
+      "miniatura": "thumbs/cronolito.jpg"
     }
   ]
 }
